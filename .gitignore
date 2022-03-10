@@ -1,2 +1,9 @@
 #Carpetas de imagenes
 /assets
+CSS/node_modules/
+
+#Archivos a ignorar
+#Archivos json
+*.json
+#Archivos map del preprocesamiento de SASS
+*.map
