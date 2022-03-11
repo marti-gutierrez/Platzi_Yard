@@ -1,0 +1,4 @@
+-var titles = ["Password","Re-enter password"]
+mixin inputBox(labelWord,typeInput)
+    label.login__label(for=""+typeInput) #{labelWord} 
+    input.login__input(type="password" name=""+typeInput id=""+typeInput placeholder="********" autocomplete="new-password" required)
