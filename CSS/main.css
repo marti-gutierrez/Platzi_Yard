@@ -39,9 +39,20 @@ body {
   inline-size: 150px;
   margin-block-end: 48px;
   justify-self: center;
+  display: block;
 }
 .login__icon img {
   inline-size: 100%;
+}
+.login__icon--letter {
+  inline-size: 153px;
+  block-size: 153px;
+  margin-block-end: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--text-input-field);
 }
 .login__title {
   font-size: 1.8rem;
@@ -79,6 +90,15 @@ body {
 .login-button {
   margin-block-start: 14px;
   margin-block-end: 30px;
+}
+.login__span {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--text-support);
+}
+.login__span a {
+  text-decoration: none;
+  color: var(--button-background);
 }
 
 .primary-button {
