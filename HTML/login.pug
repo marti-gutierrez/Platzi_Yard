@@ -1,0 +1,9 @@
+extends components/_plantilla-login.pug
+block registro
+    form.login__form(action="")
+        +inputBox(titles[2],"email")
+        +inputBox(titles[0],"password")
+        input.primary-button(type="submit" value="login" class="login-button")
+    p.login__resend 
+        span Forgot my password
+    button.primary-button(class="button--sign-up") sign up 

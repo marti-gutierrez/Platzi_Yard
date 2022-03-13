@@ -1,3 +1,7 @@
 .login__icon {
     display: none;
 }
+.button--sign-up {
+    position: relative;
+    margin-block-start: 40px;
+}
