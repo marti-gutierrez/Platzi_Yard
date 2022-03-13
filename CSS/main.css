@@ -28,6 +28,7 @@ body {
   block-size: 100vh;
   display: grid;
   place-items: center;
+  position: relative;
 }
 .login .form-container {
   inline-size: 300px;
@@ -45,14 +46,17 @@ body {
   inline-size: 100%;
 }
 .login__icon--letter {
-  inline-size: 153px;
-  block-size: 153px;
-  margin-block-end: 32px;
+  inline-size: 132px;
+  block-size: 132px;
+  border-radius: 50%;
+  margin-block-end: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
   background-color: var(--text-input-field);
+}
+.login__icon--letter img {
+  inline-size: 80px;
 }
 .login__title {
   font-size: 1.8rem;
@@ -69,16 +73,17 @@ body {
 .login__form {
   display: flex;
   flex-direction: column;
+  inline-size: 100%;
 }
-.login__label {
+.login__form .login__label {
   font-size: 1.4rem;
   font-weight: bold;
   margin-block-end: 4px;
   color: var(--title);
   justify-self: start;
 }
-.login__input {
-  block-size: 30px;
+.login__form .login__input {
+  block-size: 40px;
   padding: 6px;
   margin-block-end: 12px;
   background-color: var(--text-input-field);
@@ -91,12 +96,14 @@ body {
   margin-block-start: 14px;
   margin-block-end: 30px;
 }
-.login__span {
+.login__resend {
   font-size: 1.4rem;
+}
+.login__resend span {
   font-weight: 500;
   color: var(--text-support);
 }
-.login__span a {
+.login__resend a {
   text-decoration: none;
   color: var(--button-background);
 }
@@ -111,6 +118,16 @@ body {
   font-size: 1.6rem;
   font-weight: bold;
   cursor: pointer;
+}
+
+.button--sign-up {
+  inline-size: 300px;
+  position: absolute;
+  bottom: 0;
+  margin-block-end: 20px;
+  background-color: var(--page-background);
+  border: 1px solid var(--button-background);
+  color: var(--button-background);
 }
 
 /*# sourceMappingURL=main.css.map */
