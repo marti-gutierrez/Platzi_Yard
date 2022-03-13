@@ -7,3 +7,5 @@ CSS/node_modules/
 *.json
 #Archivos map del preprocesamiento de SASS
 *.map
+#Archivo javaScript
+*.js

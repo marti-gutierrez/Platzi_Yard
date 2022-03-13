@@ -45,14 +45,17 @@ body {
         }
     }
     &__icon--letter {
-        inline-size: 153px;
-        block-size: 153px;
-        margin-block-end: 32px;
+        inline-size: 132px;
+        block-size: 132px;
+        border-radius: 50%;
+        margin-block-end: 24px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 50%;
         background-color: var(--text-input-field);
+        img {
+            inline-size: 80px;
+        }
     }
     &__title {
         font-size: $lg;
@@ -94,17 +97,18 @@ body {
         margin-block-start: 14px;
         margin-block-end: 30px;
     }
-    &__span {
+    &__resend {
         font-size: $sm;
-        font-weight: 500;
-        color: var(--text-support);
+        span {
+            font-weight: 500;
+            color: var(--text-support);
+        }
         a {
             text-decoration: none;
             color: var(--button-background);
         }
     }
 }
-
 .primary-button {
     inline-size: 100%;
     block-size: 60px;
