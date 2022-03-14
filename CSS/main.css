@@ -23,45 +23,6 @@ body {
   line-height: 2.25rem;
 }
 
-.login__icon {
-  inline-size: 150px;
-  margin-block-end: 48px;
-  justify-self: center;
-  display: block;
-}
-.login__icon img {
-  inline-size: 100%;
-}
-.login__icon--letter {
-  inline-size: 132px;
-  block-size: 132px;
-  border-radius: 50%;
-  margin-block-end: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--text-input-field);
-}
-.login__icon--letter img {
-  inline-size: 80px;
-}
-.login-button {
-  margin-block-start: 14px;
-  margin-block-end: 30px;
-}
-.login__resend {
-  font-size: 1.4rem;
-  text-align: center;
-}
-.login__resend span {
-  font-weight: 500;
-  color: var(--text-support);
-}
-.login__resend a {
-  text-decoration: none;
-  color: var(--button-background);
-}
-
 .body {
   inline-size: 100%;
   block-size: 100vh;
@@ -79,6 +40,12 @@ body {
   grid-template-rows: 70px auto;
   align-items: center;
   justify-items: start;
+}
+.container__icon {
+  inline-size: 150px;
+  margin-block-end: 48px;
+  justify-self: center;
+  display: block;
 }
 .container__title {
   font-size: 1.8rem;
@@ -134,6 +101,8 @@ body {
   font-size: 1.6rem;
   font-weight: bold;
   cursor: pointer;
+  margin-block-start: 14px;
+  margin-block-end: 30px;
 }
 .form__button--account {
   align-self: end;
@@ -143,6 +112,19 @@ body {
   display: flex;
   flex-direction: column;
   inline-size: 100%;
+}
+
+.resend {
+  font-size: 1.4rem;
+  text-align: center;
+}
+.resend__span {
+  font-weight: 500;
+  color: var(--text-support);
+}
+.resend__link {
+  text-decoration: none;
+  color: var(--button-background);
 }
 
 .primary-button {
@@ -170,6 +152,20 @@ body {
   background-color: var(--page-background);
   border: 1px solid var(--button-background);
   color: var(--button-background);
+}
+
+.icons {
+  inline-size: 132px;
+  block-size: 132px;
+  border-radius: 50%;
+  margin-block-end: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text-input-field);
+}
+.icons__img--letter {
+  inline-size: 80px;
 }
 
 /*# sourceMappingURL=main.css.map */

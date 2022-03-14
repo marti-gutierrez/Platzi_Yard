@@ -13,17 +13,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&amp;display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="login">
-      <div class="form-container">
-        <figure class="login__icon"><img src="../assets/logos/logo_yard_sale.svg" alt="logo de platzi yard Sale"></figure>
-        <form class="login__form" action="">
-          <label class="login__label" for="email">Email address</label>
-          <input class="login__input" type="email" name="email" id="email" placeholder="jojo@example.com" autocomplete="email" required="required"/>
-          <label class="login__label" for="password">Password</label>
-          <input class="login__input" type="password" name="password" id="password" placeholder="********" autocomplete="password" required="required"/>
+    <div class="body">
+      <div class="container"><img class="container__icon" src="../assets/logos/logo_yard_sale.svg" alt="logo de platzi yard Sale">
+        <form class="form" action="">
+          <label class="form__label" for="email">Email address</label>
+          <input class="form__input" type="email" name="email" id="email" placeholder="jojo@example.com" autocomplete="email" required="required"/>
+          <label class="form__label" for="password">Password</label>
+          <input class="form__input" type="password" name="password" id="password" placeholder="********" autocomplete="password" required="required"/>
           <input class="primary-button login-button" type="submit" value="login">
-          <p class="login__resend"> <a href="">Forgot my password</a></p>
         </form>
+        <p class="resend"> <a class="resend__link" href="">Forgot my password</a></p>
         <button class="secondary-button button--signUp">sign up </button>
       </div>
     </div>
