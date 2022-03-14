@@ -1,7 +1,7 @@
 .login__icon {
     display: none;
 }
-.button--sign-up {
+.secondary-button {
     position: relative;
     margin-block-start: 40px;
 }

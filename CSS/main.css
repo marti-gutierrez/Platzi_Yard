@@ -85,7 +85,7 @@ body {
 .login__form .login__input {
   block-size: 40px;
   padding: 6px;
-  margin-block-end: 12px;
+  margin-block-end: 22px;
   background-color: var(--text-input-field);
   border: none;
   border-radius: 8px;
@@ -98,6 +98,7 @@ body {
 }
 .login__resend {
   font-size: 1.4rem;
+  text-align: center;
 }
 .login__resend span {
   font-weight: 500;
@@ -120,11 +121,16 @@ body {
   cursor: pointer;
 }
 
-.button--sign-up {
-  inline-size: 300px;
+.secondary-button {
   position: absolute;
   bottom: 0;
   margin-block-end: 20px;
+  inline-size: 300px;
+  block-size: 60px;
+  font-size: 1.6rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
   background-color: var(--page-background);
   border: 1px solid var(--button-background);
   color: var(--button-background);
