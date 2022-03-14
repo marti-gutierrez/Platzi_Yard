@@ -24,18 +24,6 @@ body {
     line-height: 2.25rem;
 }
 .login {
-    inline-size: 100%;
-    block-size: 100vh;
-    display: grid;
-    place-items: center;
-    position: relative;
-    
-    .form-container {
-        inline-size: 300px;
-        display: grid;
-        grid-template-rows: auto  1fr auto;
-        place-items: center;
-    }
     &__icon {
         inline-size: 150px;
         margin-block-end: 48px;
@@ -58,43 +46,6 @@ body {
             inline-size: 80px;
         }
     }
-    &__title {
-        font-size: $lg;
-        margin-block-end: 12px;
-        // text-align: center;
-        font-weight: bold;
-    }
-    
-    &__subtitle {
-        font-size: $md;
-        margin-block-start: 0px;
-        margin-block-end: 32px;
-        font-weight: 300;
-        color: var(--text-support);
-    }
-
-    &__form {
-        display: flex;
-        flex-direction: column;
-        inline-size: 100%;
-        .login__label {
-            font-size: $sm;
-            font-weight: bold;
-            margin-block-end: 4px;
-            color: var(--title);
-            justify-self: start;
-        }
-        .login__input {
-            block-size: 40px;
-            padding: 6px;
-            margin-block-end: 22px;
-            background-color: var(--text-input-field);
-            border: none;
-            border-radius: 8px;
-            font-size: $md;
-            color: var(--text-support);
-        }
-    }
     &-button {
         margin-block-start: 14px;
         margin-block-end: 30px;
@@ -112,27 +63,88 @@ body {
         }
     }
 }
-
-.account {
+.body {
     inline-size: 100%;
     block-size: 100vh;
     display: grid;
-    justify-items: center;
-    align-items: start;
-    position: relative;
-    &-container {
-        inline-size: 300px;
-        display: grid;
-        grid-template-rows: 160px auto 300px;
-        .title {
-            align-self: end;
-            margin-block-end: 40px;
+    place-items: center;
+}
+.container {
+    inline-size: 300px;
+    display: grid;
+    grid-template-rows: auto  1fr auto;
+    place-items: center;
+    &--account {
+        grid-template-rows: 70px auto;
+        align-items: center;
+        justify-items: start;
+    }
+    &__title {
+        font-size: $lg;
+        margin-block-end: 12px;
+        // text-align: center;
+        font-weight: bold;
+        &--account {
+            align-self: start;
         }
-        .primary-button {
+    }
+    &__subtitle {
+        font-size: $md;
+        margin-block-start: 0px;
+        margin-block-end: 32px;
+        font-weight: 300;
+        color: var(--text-support);
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    inline-size: 100%;
+    &--account {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto 260px;
+        place-items: center;
+    }
+    &__label {
+        font-size: $sm;
+        font-weight: bold;
+        margin-block-end: 4px;
+        color: var(--title);
+        justify-self: start;
+    }
+    &__input {
+        block-size: 40px;
+        padding: 6px;
+        margin-block-end: 22px;
+        background-color: var(--text-input-field);
+        border: none;
+        border-radius: 8px;
+        font-size: $md;
+        color: var(--text-support);
+    }
+    &__button {
+        inline-size: 100%;
+        block-size: 60px;
+        background-color: var(--button-background);
+        border: none;
+        border-radius: 8px;
+        color: var(--page-background);
+        font-size: $md;
+        font-weight: bold;
+        cursor: pointer;
+        &--account {
             align-self: end;
         }
     }
 }
+.input-container {
+    display: flex;
+    flex-direction: column;
+    inline-size: 100%;
+}
+
 .primary-button {
     inline-size: 100%;
     block-size: 60px;

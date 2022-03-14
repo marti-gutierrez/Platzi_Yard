@@ -5,3 +5,6 @@
     position: relative;
     margin-block-start: 40px;
 }
+.form--account {
+    grid-template-rows: auto 80px;
+}

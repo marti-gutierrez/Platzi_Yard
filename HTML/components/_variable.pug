@@ -1,11 +1,11 @@
 -var titles = ["Password","Re-enter password","Email address"]
 mixin inputBox(labelWord,typeInput)
-    label.login__label(for=""+typeInput) #{labelWord}
+    label.form__label(for=""+typeInput) #{labelWord}
     if (typeInput == "email" )
-        input.login__input(type="email" name=""+typeInput id=""+typeInput placeholder="jojo@example.com" autocomplete="email" required)
+        input.form__input(type="email" name=""+typeInput id=""+typeInput placeholder="jojo@example.com" autocomplete="email" required)
     else if (typeInput == "password")
-        input.login__input(type="password" name=""+typeInput id=""+typeInput placeholder="********" autocomplete="password" required)
+        input.form__input(type="password" name=""+typeInput id=""+typeInput placeholder="********" autocomplete="password" required)
     else if (typeInput == "username")
-        input.login__input(type="text" id="username", name="username" placeholder="Martín Gutiérrez" autocomplete="name" required)
+        input.form__input(type="text" id="username", name="username" placeholder="Martín Gutiérrez" autocomplete="name" required)
     else
-        input.login__input(type="password" name=""+typeInput id=""+typeInput placeholder="********" autocomplete="new-password" required)
+        input.form__input(type="password" name=""+typeInput id=""+typeInput placeholder="********" autocomplete="new-password" required)

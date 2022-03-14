@@ -23,19 +23,6 @@ body {
   line-height: 2.25rem;
 }
 
-.login {
-  inline-size: 100%;
-  block-size: 100vh;
-  display: grid;
-  place-items: center;
-  position: relative;
-}
-.login .form-container {
-  inline-size: 300px;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  place-items: center;
-}
 .login__icon {
   inline-size: 150px;
   margin-block-end: 48px;
@@ -58,40 +45,6 @@ body {
 .login__icon--letter img {
   inline-size: 80px;
 }
-.login__title {
-  font-size: 1.8rem;
-  margin-block-end: 12px;
-  font-weight: bold;
-}
-.login__subtitle {
-  font-size: 1.6rem;
-  margin-block-start: 0px;
-  margin-block-end: 32px;
-  font-weight: 300;
-  color: var(--text-support);
-}
-.login__form {
-  display: flex;
-  flex-direction: column;
-  inline-size: 100%;
-}
-.login__form .login__label {
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin-block-end: 4px;
-  color: var(--title);
-  justify-self: start;
-}
-.login__form .login__input {
-  block-size: 40px;
-  padding: 6px;
-  margin-block-end: 22px;
-  background-color: var(--text-input-field);
-  border: none;
-  border-radius: 8px;
-  font-size: 1.6rem;
-  color: var(--text-support);
-}
 .login-button {
   margin-block-start: 14px;
   margin-block-end: 30px;
@@ -109,25 +62,87 @@ body {
   color: var(--button-background);
 }
 
-.account {
+.body {
   inline-size: 100%;
   block-size: 100vh;
   display: grid;
-  justify-items: center;
-  align-items: start;
-  position: relative;
+  place-items: center;
 }
-.account-container {
+
+.container {
   inline-size: 300px;
   display: grid;
-  grid-template-rows: 160px auto 300px;
+  grid-template-rows: auto 1fr auto;
+  place-items: center;
 }
-.account-container .title {
-  align-self: end;
-  margin-block-end: 40px;
+.container--account {
+  grid-template-rows: 70px auto;
+  align-items: center;
+  justify-items: start;
 }
-.account-container .primary-button {
+.container__title {
+  font-size: 1.8rem;
+  margin-block-end: 12px;
+  font-weight: bold;
+}
+.container__title--account {
+  align-self: start;
+}
+.container__subtitle {
+  font-size: 1.6rem;
+  margin-block-start: 0px;
+  margin-block-end: 32px;
+  font-weight: 300;
+  color: var(--text-support);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  inline-size: 100%;
+}
+.form--account {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 260px;
+  place-items: center;
+}
+.form__label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-block-end: 4px;
+  color: var(--title);
+  justify-self: start;
+}
+.form__input {
+  block-size: 40px;
+  padding: 6px;
+  margin-block-end: 22px;
+  background-color: var(--text-input-field);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  color: var(--text-support);
+}
+.form__button {
+  inline-size: 100%;
+  block-size: 60px;
+  background-color: var(--button-background);
+  border: none;
+  border-radius: 8px;
+  color: var(--page-background);
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.form__button--account {
   align-self: end;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  inline-size: 100%;
 }
 
 .primary-button {

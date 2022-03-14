@@ -13,17 +13,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
   </head>
   <body> 
-    <div class="account"> 
-      <div class="account-container">
-        <h1 class="title">My account</h1>
-        <form class="login__form" action="">
-          <label class="login__label" for="username">Name</label>
-          <input class="login__input" type="text" id="username" name="username" placeholder="Martín Gutiérrez" autocomplete="name" required="required"/>
-          <label class="login__label" for="email">Email address</label>
-          <input class="login__input" type="email" name="email" id="email" placeholder="jojo@example.com" autocomplete="email" required="required"/>
-          <label class="login__label" for="password">Password</label>
-          <input class="login__input" type="password" name="password" id="password" placeholder="********" autocomplete="password" required="required"/>
-          <input class="primary-button" type="submit" value="create"/>
+    <div class="body"> 
+      <div class="container container--account">
+        <h1 class="container__title container__title--account">My account</h1>
+        <form class="form form--account" action="">
+          <div class="input-container">
+            <label class="form__label" for="username">Name</label>
+            <input class="form__input" type="text" id="username" name="username" placeholder="Martín Gutiérrez" autocomplete="name" required="required"/>
+            <label class="form__label" for="email">Email address</label>
+            <input class="form__input" type="email" name="email" id="email" placeholder="jojo@example.com" autocomplete="email" required="required"/>
+            <label class="form__label" for="password">Password</label>
+            <input class="form__input" type="password" name="password" id="password" placeholder="********" autocomplete="password" required="required"/>
+          </div>
+          <input class="form__button form__button--account" type="submit" value="create"/>
         </form>
       </div>
     </div>

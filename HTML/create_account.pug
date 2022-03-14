@@ -4,11 +4,12 @@ doctype html
 html(lang="es")
     include components/_head.pug
     body 
-        .account 
-            .account-container
-                h1.title My account
-                form.login__form(action="")
-                    +inputBox("Name","username")
-                    +inputBox(titles[2],"email")
-                    +inputBox(titles[0],"password")
-                    input.primary-button(type="submit" value="create")
+        .body 
+            .container(class="container--account")
+                h1.container__title(class="container__title--account") My account
+                form.form(action="" class="form--account")
+                    .input-container
+                        +inputBox("Name","username")
+                        +inputBox(titles[2],"email")
+                        +inputBox(titles[0],"password")
+                    input.form__button(type="submit" value="create" class="form__button--account")
