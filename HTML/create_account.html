@@ -1,0 +1,31 @@
+<!DOCTYPE html >
+<html lang="es">
+  <head> 
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>New login </title>
+    <link rel="stylesheet" href="../CSS/main.css"/>
+    <!-- código para una computadora de escritorio-->
+    <link rel="stylesheet" href="../CSS/desktop.css" media="screen and (min-width: 720px)"/>
+    <!-- Font Family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  </head>
+  <body> 
+    <div class="account"> 
+      <div class="account-container">
+        <h1 class="title">My account</h1>
+        <form class="login__form" action="">
+          <label class="login__label" for="username">Name</label>
+          <input class="login__input" type="text" id="username" name="username" placeholder="Martín Gutiérrez" autocomplete="name" required="required"/>
+          <label class="login__label" for="email">Email address</label>
+          <input class="login__input" type="email" name="email" id="email" placeholder="jojo@example.com" autocomplete="email" required="required"/>
+          <label class="login__label" for="password">Password</label>
+          <input class="login__input" type="password" name="password" id="password" placeholder="********" autocomplete="password" required="required"/>
+        </form>
+        <input class="primary-button" type="submit" value="create"/>
+      </div>
+    </div>
+  </body>
+</html>

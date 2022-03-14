@@ -112,6 +112,27 @@ body {
         }
     }
 }
+
+.account {
+    inline-size: 100%;
+    block-size: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: start;
+    position: relative;
+    &-container {
+        inline-size: 300px;
+        display: grid;
+        grid-template-rows: 160px auto 300px;
+        .title {
+            align-self: end;
+            margin-block-end: 40px;
+        }
+        .primary-button {
+            align-self: end;
+        }
+    }
+}
 .primary-button {
     inline-size: 100%;
     block-size: 60px;
@@ -124,9 +145,9 @@ body {
     cursor: pointer;
 }
 .secondary-button {
-    position: absolute;
     bottom: 0;
     margin-block-end: 20px;
+    position: absolute;
     inline-size: 300px;
     block-size: 60px;
     font-size: $md;

@@ -109,6 +109,27 @@ body {
   color: var(--button-background);
 }
 
+.account {
+  inline-size: 100%;
+  block-size: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  position: relative;
+}
+.account-container {
+  inline-size: 300px;
+  display: grid;
+  grid-template-rows: 160px auto 300px;
+}
+.account-container .title {
+  align-self: end;
+  margin-block-end: 40px;
+}
+.account-container .primary-button {
+  align-self: end;
+}
+
 .primary-button {
   inline-size: 100%;
   block-size: 60px;
@@ -122,9 +143,9 @@ body {
 }
 
 .secondary-button {
-  position: absolute;
   bottom: 0;
   margin-block-end: 20px;
+  position: absolute;
   inline-size: 300px;
   block-size: 60px;
   font-size: 1.6rem;

@@ -5,5 +5,7 @@ mixin inputBox(labelWord,typeInput)
         input.login__input(type="email" name=""+typeInput id=""+typeInput placeholder="jojo@example.com" autocomplete="email" required)
     else if (typeInput == "password")
         input.login__input(type="password" name=""+typeInput id=""+typeInput placeholder="********" autocomplete="password" required)
+    else if (typeInput == "username")
+        input.login__input(type="text" id="username", name="username" placeholder="Martín Gutiérrez" autocomplete="name" required)
     else
         input.login__input(type="password" name=""+typeInput id=""+typeInput placeholder="********" autocomplete="new-password" required)

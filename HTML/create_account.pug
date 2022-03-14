@@ -1,0 +1,14 @@
+include components/_variable.pug
+
+doctype html 
+html(lang="es")
+    include components/_head.pug
+    body 
+        .account 
+            .account-container
+                h1.title My account
+                form.login__form(action="")
+                    +inputBox("Name","username")
+                    +inputBox(titles[2],"email")
+                    +inputBox(titles[0],"password")
+                input.primary-button(type="submit" value="create")
