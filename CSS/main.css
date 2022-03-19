@@ -91,6 +91,9 @@ body {
   font-size: 1.6rem;
   color: var(--text-support);
 }
+.form__input--edit {
+  background-color: var(--page-background);
+}
 .form__button {
   inline-size: 100%;
   block-size: 60px;
@@ -127,7 +130,7 @@ body {
   color: var(--button-background);
 }
 
-.primary-button {
+.button {
   inline-size: 100%;
   block-size: 60px;
   background-color: var(--button-background);
@@ -138,17 +141,7 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
-
-.secondary-button {
-  bottom: 0;
-  margin-block-end: 20px;
-  position: absolute;
-  inline-size: 300px;
-  block-size: 60px;
-  font-size: 1.6rem;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
+.button--second {
   background-color: var(--page-background);
   border: 1px solid var(--button-background);
   color: var(--button-background);

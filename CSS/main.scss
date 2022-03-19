@@ -91,6 +91,9 @@ body {
         border-radius: 8px;
         font-size: $md;
         color: var(--text-support);
+        &--edit {
+            background-color: var(--page-background);
+        }
     }
     &__button {
         inline-size: 100%;
@@ -127,7 +130,7 @@ body {
     }
 }
 
-.primary-button {
+.button {
     inline-size: 100%;
     block-size: 60px;
     background-color: var(--button-background);
@@ -137,21 +140,13 @@ body {
     font-size: $md;
     font-weight: bold;
     cursor: pointer;
+    &--second {
+        background-color: var(--page-background);
+        border: 1px solid var(--button-background);
+        color: var(--button-background);
+    }
 }
-.secondary-button {
-    bottom: 0;
-    margin-block-end: 20px;
-    position: absolute;
-    inline-size: 300px;
-    block-size: 60px;
-    font-size: $md;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    background-color: var(--page-background);
-    border: 1px solid var(--button-background);
-    color: var(--button-background);
-}
+
 .icons{
     inline-size: 132px;
     block-size: 132px;

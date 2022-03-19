@@ -1,0 +1,34 @@
+<!DOCTYPE html >
+<html lang="es">
+  <head> 
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>New login </title>
+    <link rel="stylesheet" href="../CSS/main.css"/>
+    <!-- código para una computadora de escritorio-->
+    <link rel="stylesheet" href="../CSS/desktop.css" media="screen and (min-width: 720px)"/>
+    <!-- Font Family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+    <link rel="shortcut icon" href="../assets/logos/favicon_bota_fora.svg"/>
+  </head>
+  <body> 
+    <div class="body"> 
+      <div class="container container--account">
+        <h1 class="container__title container__title--account">My account</h1>
+        <form class="form form--account" action="">
+          <div class="input-container">
+            <label class="form__label" for="username">Name </label>
+            <input class="form__input form__input--edit" type="text" id="username" name="username" placeholder="Martín Gutiérrez" autocomplete="name" disabled="disabled"/>
+            <label class="form__label" for="email">Email address </label>
+            <input class="form__input form__input--edit" type="email" name="undefined" id="undefined" placeholder="jojo@example.com" autocomplete="email" required="required" disabled="disabled"/>
+            <label class="form__label" for="password">Password </label>
+            <input class="form__input form__input--edit" type="password" placeholder="********" disabled="disabled"/>
+          </div>
+          <input class="button--second button" type="submit" value="Edit"/>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

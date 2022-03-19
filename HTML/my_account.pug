@@ -1,0 +1,18 @@
+include components/_variable.pug
+
+doctype html 
+html(lang="es")
+    include components/_head.pug
+    body 
+        .body 
+            .container(class="container--account")
+                h1.container__title(class="container__title--account") My account
+                form.form(action="" class="form--account")
+                    .input-container
+                        label.form__label(for="username") Name 
+                        input.form__input(class="form__input--edit" type="text" id="username", name="username" placeholder="Martín Gutiérrez" autocomplete="name" disabled)
+                        label.form__label(for="email") Email address 
+                        input.form__input(class="form__input--edit" type="email" name=""+typeInput id=""+typeInput placeholder="jojo@example.com" autocomplete="email" required disabled)
+                        label.form__label(for="password") Password 
+                        input.form__input(class="form__input--edit" type="password" placeholder="********" disabled)
+                    input.button--second(type="submit" value="Edit" class="button")
