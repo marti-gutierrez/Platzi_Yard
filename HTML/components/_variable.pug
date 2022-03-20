@@ -1,4 +1,6 @@
 -var titles = ["Password","Re-enter password","Email address"]
+-var NoProductos = 0;
+
 mixin inputBox(labelWord,typeInput)
     label.form__label(for=""+typeInput) #{labelWord}
     if (typeInput == "email" )
@@ -11,13 +13,15 @@ mixin inputBox(labelWord,typeInput)
         input.form__input(type="password" name=""+typeInput id=""+typeInput placeholder="********" autocomplete="new-password" required)
 
 mixin productCard(price,article,typeOfCar,urlProductImg)
-    section.product-container 
-        img.card__image(src=""+urlProductImg, alt="imagen de producto")
-        footer.car__footer 
-            p.card__text-price #{price}
-            p.card__text-article  #{article}
-        figure.card__icon
-        if (typeOfCar == "add") 
-            img.icon__add(src="../assets/icons/bt_add_to_cart.svg", alt="icono de carro de compras para agregar")
-        else
-            img.icon__add(src="../assets/icons/bt_added_to_cart.svg", alt="icono de carro de compras agregado")
+    section.card-product 
+        img.card-product__image(src=""+urlProductImg, alt="imagen de producto")
+        footer.card-product__footer
+            .card-product__footer-container 
+                p.card-product__text-price #{price}
+                p.card-product__text-article  #{article}
+            if (typeOfCar == "add") 
+                figure.card-product__figure
+                    img.card-product__icon(src="../assets/icons/bt_add_to_cart.svg", alt="icono de carro de compras para agregar")
+            else
+                figure.card-product__figure(class="card-product__figure--added")
+                    img.card-product__icon(src="../assets/icons/bt_added_to_cart.svg", alt="icono de carro de compras agregado")

@@ -111,6 +111,54 @@ body {
   align-self: end;
 }
 
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 140px);
+  gap: 26px;
+  place-content: center;
+}
+
+.card-product {
+  inline-size: 100%;
+}
+.card-product__image {
+  inline-size: 100%;
+  block-size: 140px;
+  border-radius: 20px;
+  /*para que las imagenes no se distorsionen usamos*/
+  object-fit: cover;
+}
+.card-product__footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card-product__text-price {
+  margin-block-start: 0px;
+  margin-block-end: 4px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: #404040;
+}
+.card-product__text-article {
+  margin-block-start: 0px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-support);
+}
+.card-product__figure {
+  inline-size: 40px;
+  block-size: 40px;
+  border-radius: 50%;
+}
+.card-product__figure--added {
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.75);
+}
+.card-product__icon {
+  inline-size: 100%;
+}
+
 .input-container {
   display: flex;
   flex-direction: column;
