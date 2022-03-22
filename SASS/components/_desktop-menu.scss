@@ -1,0 +1,33 @@
+.desktop-menu {
+    inline-size: 126px;
+    block-size: auto;
+    padding: 20px 20px 0 20px;
+    border: 1px solid var(--labels-product);
+    border-radius: 6px;
+    font-size: $md;
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    &__item {
+        text-align: end ;
+        &:last-child {
+            padding-block-start: 20px;
+            border-block-start: 1px solid var(--labels-product);
+        }
+        &:not(:last-child) {
+            font-weight: bold;
+        }
+    }
+    &__link {
+        display: inline-block;
+        color: var(--title);
+        text-decoration: none;
+        margin-block-end: 20px;
+        &--signOut {
+            color: var(--button-background);
+            font-size: $sm;
+        }
+    }
+}

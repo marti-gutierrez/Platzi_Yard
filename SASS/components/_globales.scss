@@ -1,0 +1,25 @@
+:root {
+    --text-input-field: #F7F7F7;
+    --button-background: #ACD9B2;
+    --text-support: #797979;
+    --labels-product:#C7C7C7;
+    --page-background: #FFFFFF;
+    --title : #000000;
+    --price-tags: #232830;
+}
+$sm: 1.4rem;
+$md: 1.6rem;
+$lg: 1.8rem;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 2.25rem;
+}

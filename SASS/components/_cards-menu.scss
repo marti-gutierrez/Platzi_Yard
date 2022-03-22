@@ -1,0 +1,46 @@
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,140px);
+    gap: 26px;
+    place-content: center;
+}
+.card-product {
+    inline-size: 100%;
+    &__image {
+        inline-size: 100%;
+        block-size: 140px;
+        border-radius: 20px;
+        /*para que las imagenes no se distorsionen usamos*/
+        object-fit: cover;
+    }
+    &__footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__text-price {
+        margin-block-start: 0px;
+        margin-block-end: 4px;
+        font-size: $md;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        color: #404040;
+    }
+    &__text-article {
+        margin-block-start: 0px;
+        font-size: $sm;
+        font-weight: 400;
+        color: var(--text-support);
+    }
+    &__figure {
+        inline-size: 40px;
+        block-size: 40px;
+        border-radius: 50%;
+        &--added {
+            box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.75);
+        }
+    }
+    &__icon {
+        inline-size: 100%;
+    }
+}

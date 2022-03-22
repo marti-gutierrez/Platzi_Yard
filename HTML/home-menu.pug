@@ -1,0 +1,14 @@
+include components/_variable.pug
+
+doctype html
+html(lang="en")
+    include components/_head.pug
+    body
+        .desktop-menu 
+            ul.desktop-menu__list
+                li.desktop-menu__item 
+                    a.desktop-menu__link(href="/") My Orders
+                li.desktop-menu__item 
+                    a.desktop-menu__link(href="./my_account.html") My Account
+                li.desktop-menu__item 
+                    a.desktop-menu__link(href="/" class="desktop-menu__link--signOut") Sign out

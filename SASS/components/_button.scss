@@ -1,0 +1,16 @@
+.button {
+    inline-size: 100%;
+    block-size: 60px;
+    background-color: var(--button-background);
+    border: none;
+    border-radius: 8px;
+    color: var(--page-background);
+    font-size: $md;
+    font-weight: bold;
+    cursor: pointer;
+    &--second {
+        background-color: var(--page-background);
+        border: 1px solid var(--button-background);
+        color: var(--button-background);
+    }
+}
