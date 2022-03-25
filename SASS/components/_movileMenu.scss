@@ -1,0 +1,33 @@
+.movile-menu {
+    padding: 24px;
+    font-size: $md;
+    &__list {
+        margin: 24px 0 0;
+        list-style: none;
+        &:nth-child(1) {
+            border-block-end: 1px solid var(--text-support); 
+        }
+        &--account {
+            margin-block-start: 40px;
+            margin-block-end: 88px;
+        }
+        &--login {
+            font-size: $sm;
+            font-weight: 300;
+        }
+    }
+    &__item {
+        margin-block-end: 36px;
+        &--login {
+            margin-block-end: 6px;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        &--signOut {
+            color: var(--button-background);
+        }
+    }
+}

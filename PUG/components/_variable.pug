@@ -1,4 +1,5 @@
 -var titles = ["Password","Re-enter password","Email address"]
+-var movileMenuCategories = ["CATEGORIES","All","Clothes","Eletronics","Furnitures","Toys","Others"]
 -var NoProductos = 0;
 
 mixin inputBox(labelWord,typeInput)
@@ -25,3 +26,7 @@ mixin productCard(price,article,typeOfCar,urlProductImg)
             else
                 figure.card-product__figure(class="card-product__figure--added")
                     img.card-product__icon(src="../assets/icons/bt_added_to_cart.svg", alt="icono de carro de compras agregado")
+                
+mixin movileItem(text,link)
+    li.movile-menu__item 
+        a.movile-menu__link(href=""+link) #{text}

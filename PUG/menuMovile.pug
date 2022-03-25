@@ -1,0 +1,20 @@
+include components/_variable.pug
+
+doctype html
+html(lang="en")
+    include components/_head.pug
+    body
+        .movile-menu 
+            ul.movile-menu__list
+                each val in movileMenuCategories
+                    +movileItem(val,"./home1.html")
+            ul.movile-menu__list(class="movile-menu__list--account") 
+                li.movile-menu__item 
+                    a.movile-menu__link(href="./home1.html") My orders 
+                li.movile-menu__item 
+                    a.movile-menu__link(href="./my_account.html") My account 
+            ul.movile-menu__list(class="movile-menu__list--login") 
+                li.movile-menu__item(class="movile-menu__item--login")
+                    a.movile-menu__link(href="/") jojo@company.com 
+                li.movile-menu__item(class="movile-menu__item--login") 
+                    a.movile-menu__link(href="/" class="movile-menu__link--signOut") Sign out 
