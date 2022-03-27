@@ -1,0 +1,23 @@
+.shopping-cart {
+    block-size: 100px;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    place-items: center;
+    &__img {
+        inline-size: 70px;
+        block-size: 70px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    &__description {
+        justify-self: start;
+        color: var(--text-support);
+        font-size: $sm;
+    }
+    &__price {
+        font-family: 'Roboto', sans-serif;
+        font-size: $md;
+        font-weight: bold;
+    }
+}

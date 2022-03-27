@@ -1,0 +1,39 @@
+.order {
+    block-size: 76px;
+    margin-block-end: 24px;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    background-color: var(--text-input-field);
+    border-radius: 20px;
+    align-items: center;
+    &--products {
+        grid-template-columns:  auto 1fr 5px;
+        background-color: white;
+        padding: 0;
+    }
+    &__data {
+        display: flex;
+        flex-direction: column;
+    }
+    &__price {
+        text-align: end;
+    }
+    &__date,
+    &__price {
+        @extend .shopping-cart__price;
+    }
+    &__no-product {
+        @extend .shopping-cart__description;
+    }
+    &__icon {
+        inline-size: 100%;
+        block-size: 10px;
+        background-image: url(../assets/icons/flechita.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+    }
+}

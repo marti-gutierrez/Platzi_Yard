@@ -1,0 +1,19 @@
+include components/_variable.pug
+
+doctype html
+html(lang="en")
+    include components/_head.pug
+    body
+        main.my-order 
+            .my-order-container 
+                h1.my-order__title My order
+                section.my-order-content
+                    +order("03.25.2022","6 articles","$ 560.00")
+                    +shopingCard("../assets/img/refrigerador.webp","refrigerador","$ 120.50")
+                    +shopingCard("../assets/img/refrigerador.webp","refrigerador","$ 120.50")
+                    +shopingCard("../assets/img/refrigerador.webp","refrigerador","$ 120.50")
+                    +shopingCard("../assets/img/refrigerador.webp","refrigerador","$ 120.50")
+                    +shopingCard("../assets/img/refrigerador.webp","refrigerador","$ 120.50")
+                    +shopingCard("../assets/img/refrigerador.webp","refrigerador","$ 120.50")
+                    +shopingCard("../assets/img/refrigerador.webp","refrigerador","$ 120.50")
+

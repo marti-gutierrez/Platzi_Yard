@@ -1,0 +1,19 @@
+.my-order {
+    inline-size: 100%;
+    block-size: 100vh;
+    display: grid;
+    place-items: center;
+    &__title {
+        font-size: $lg;
+        margin-block-end: 40px;
+    }
+    &-container {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        inline-size: 300px;
+    }
+    &-content {
+        display: flex;
+        flex-direction: column;
+    }
+}

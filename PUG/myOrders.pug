@@ -1,0 +1,15 @@
+include components/_variable.pug
+
+doctype html
+html(lang="en")
+    include components/_head.pug
+    body
+        main.my-order 
+            .my-order-container 
+                h1.my-order__title My orders
+                section.my-order-content
+                    +orders("03.25.2022","6 articles","$ 560.00")
+                    +orders("03.25.2022","6 articles","$ 560.00")
+                    +orders("03.25.2022","6 articles","$ 560.00")
+                    +orders("03.25.2022","6 articles","$ 560.00")
+                    +orders("03.25.2022","6 articles","$ 560.00")

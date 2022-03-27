@@ -30,3 +30,25 @@ mixin productCard(price,article,typeOfCar,urlProductImg)
 mixin movileItem(text,link)
     li.movile-menu__item 
         a.movile-menu__link(href=""+link) #{text}
+
+mixin shopingCard(img,product,price) 
+    .shopping-cart 
+        figure.shopping-cart__figure 
+            img.shopping-cart__img(src=""+img, alt="")
+        p.shopping-cart__description #{product}
+        p.shopping-cart__price #{price}
+
+mixin order(date,noProducts,price)
+    section.order
+        p.order__data 
+            span.order__date #{date}
+            span.order__no-product 6 #{noProducts}
+        p.order__price #{price}
+
+mixin orders(date,noProducts,price)
+    section.order(class="order--products")
+        p.order__data 
+            span.order__date #{date}
+            span.order__no-product #{noProducts}
+        p.order__price #{price}
+        span.order__icon
